@@ -30,6 +30,7 @@
   "work": [
     {
       "name": "Primark",
+      "location": "Zaandam, Netherlands",
       "position": "Sales Employee Part-time",
       "url": "https://www.primark.com/nl",
       "startDate": "2021-06-22",
@@ -43,6 +44,7 @@
     },
     {
       "name": "Primark",
+      "location": "Amsterdam, Netherlands",
       "position": "Sales Employee Part-time",
       "url": "https://www.primark.com/nl",
       "startDate": "2020-02-17",
@@ -50,6 +52,7 @@
     },
     {
       "name": "Primark",
+      "location": "Amsterdam, Netherlands",
       "position": "Sales Supervisor",
       "url": "https://www.primark.com/nl",
       "startDate": "2019-10-27",
@@ -63,6 +66,7 @@
     },
     {
       "name": "Primark",
+      "location": "Amsterdam, Netherlands",
       "position": "Sales Employee",
       "url": "https://www.primark.com/nl",
       "startDate": "2018-10-28",
@@ -70,6 +74,7 @@
     },
     {
       "name": "K2 Software",
+      "location": "Lorena, Brazil",
       "position": "2nd Line Support Analyst",
       "url": "http://www.k2software.com.br",
       "startDate": "2013-05-13",
@@ -83,6 +88,7 @@
     },
     {
       "name": "DentalPrev",
+      "location": "Lorena, Brazil",
       "position": "IT Assistant",
       "url": "http://www.dentalprev.ind.br",
       "startDate": "2013-03-13",
@@ -90,6 +96,7 @@
     },
     {
       "name": "MBD Informática",
+      "location": "Lorena, Brazil",
       "position": "Technical Support Sector Supervisor",
       "url": "http://www.mbd.com.br",
       "startDate": "2011-06-01",
