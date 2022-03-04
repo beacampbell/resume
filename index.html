@@ -9,12 +9,12 @@
     <style>:root {
   color-scheme: light dark;
 
-  --color-background: #ffffff;
-  --color-primary: #212529;
-  --color-secondary: #95a5a6;
-  --color-muted: #f4f6f6;
-  --color-accent: #f1c40f;
-  --color-link: #2ecc71;
+  --color-background: #ffffff; /* White */
+  --color-muted: #f3f4f5; /* Light Gray 200 */
+  --color-primary: #191e23; /* Dark Gray 900 */
+  --color-secondary: #6c7781; /* Dark Gray 300 */
+  --color-accent: #ffb900; /* Accent Yellow */
+  --color-link: #46b450; /* Accent Green */
 
   --scale-ratio: 1.25;
   --scale0: 1rem;
@@ -27,10 +27,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: #181a1b;
-    --color-primary: #d1cdc7;
-    --color-secondary: #aaa398;
-    --color-muted: #1e2021;
+    --color-background: #191e23; /* Dark Gray 900 */
+    --color-muted: #23282d; /* Dark Gray 800 */
+    --color-primary: #fbfbfc; /* Light Gray 100 */
+    --color-secondary: #ccd0d4; /* Light Gray 700 */
   }
 }
 
@@ -181,6 +181,10 @@ blockquote > * + * {
   margin-top: 0.6em;
 }
 
+.meta {
+  color: var(--color-secondary);
+}
+
 .stack {
   display: grid;
   gap: 1.5em;
@@ -196,24 +200,6 @@ blockquote > * + * {
   gap: 1em;
 }
 
-.spaced-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.spaced-list::before {
-  border-bottom: 1px solid var(--color-muted);
-  content: '';
-  flex-grow: 1;
-  margin: 0 1em;
-  order: 1;
-}
-
-.spaced-list > :nth-child(2) {
-  order: 2;
-}
-
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -225,6 +211,11 @@ blockquote > * + * {
   background: var(--color-muted);
   margin: 0 0.2em 0.2em 0;
   padding: 0.2em 0.6em;
+}
+
+.bullet-item:not(:first-child)::before {
+  content: '· ';
+  margin: 0 0.2em;
 }
 
 @media print, (min-width: 48em) {
@@ -298,14 +289,36 @@ blockquote > * + * {
         <div class="stack">
             <article>
               <header>
-                <div class="spaced-list">
-                  <h4>Sales Employee Part-time</h4>
-                  <span>
+                <h4>Sales Support</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://www.cargill.com/">Cargill</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2021-11-08">Nov 2021</time> –
+                    Present
+                  </div>
+                    <div>Bergen op Zoom, Netherlands</div>
+                </div>
+              </header>
+                <ul>
+                    <li><p>Support account and sales managers.</p></li>
+                    <li><p>Creation of quotes, Long Term Suppliers Declaration requests, sample requests and quality requests.</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <h4>Sales Employee Part-time</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://www.primark.com/nl">Primark</a></strong>
+                  </div>
+                  <div>
                     <time datetime="2021-06-22">Jun 2021</time> –
                     <time datetime="2021-10-04">Oct 2021</time>
-                  </span>
+                  </div>
+                    <div>Zaandam, Netherlands</div>
                 </div>
-                <strong><a href="https://www.primark.com/nl">Primark</a></strong>
               </header>
                 <ul>
                     <li><p>Ensured that the store looks good for the customer, folding, aligning and sorting clothes by size and price, and finding places for new collections.</p></li>
@@ -316,26 +329,32 @@ blockquote > * + * {
             </article>
             <article>
               <header>
-                <div class="spaced-list">
-                  <h4>Sales Employee Part-time</h4>
-                  <span>
+                <h4>Sales Employee Part-time</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://www.primark.com/nl">Primark</a></strong>
+                  </div>
+                  <div>
                     <time datetime="2020-02-17">Feb 2020</time> –
-                    <time datetime="2020-10-30">Oct 2020</time>
-                  </span>
+                    <time datetime="2020-08-30">Aug 2020</time>
+                  </div>
+                    <div>Amsterdam, Netherlands</div>
                 </div>
-                <strong><a href="https://www.primark.com/nl">Primark</a></strong>
               </header>
             </article>
             <article>
               <header>
-                <div class="spaced-list">
-                  <h4>Sales Supervisor</h4>
-                  <span>
+                <h4>Sales Supervisor</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://www.primark.com/nl">Primark</a></strong>
+                  </div>
+                  <div>
                     <time datetime="2019-10-27">Oct 2019</time> –
                     <time datetime="2020-02-16">Feb 2020</time>
-                  </span>
+                  </div>
+                    <div>Amsterdam, Netherlands</div>
                 </div>
-                <strong><a href="https://www.primark.com/nl">Primark</a></strong>
               </header>
                 <ul>
                     <li><p>Supported management in certain departments, delegating tasks to sales employees and ensuring work quality.</p></li>
@@ -346,26 +365,32 @@ blockquote > * + * {
             </article>
             <article>
               <header>
-                <div class="spaced-list">
-                  <h4>Sales Employee</h4>
-                  <span>
+                <h4>Sales Employee</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://www.primark.com/nl">Primark</a></strong>
+                  </div>
+                  <div>
                     <time datetime="2018-10-28">Oct 2018</time> –
                     <time datetime="2019-10-27">Oct 2019</time>
-                  </span>
+                  </div>
+                    <div>Amsterdam, Netherlands</div>
                 </div>
-                <strong><a href="https://www.primark.com/nl">Primark</a></strong>
               </header>
             </article>
             <article>
               <header>
-                <div class="spaced-list">
-                  <h4>2nd Line Support Analyst</h4>
-                  <span>
+                <h4>2nd Line Support Analyst</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="http://www.k2software.com.br">K2 Software</a></strong>
+                  </div>
+                  <div>
                     <time datetime="2013-05-13">May 2013</time> –
                     <time datetime="2017-11-08">Nov 2017</time>
-                  </span>
+                  </div>
+                    <div>Lorena, Brazil</div>
                 </div>
-                <strong><a href="http://www.k2software.com.br">K2 Software</a></strong>
               </header>
                 <p>Software House specializing in the development of solutions, with automation tools Administrative and Consulting.</p>
                 <ul>
@@ -376,26 +401,32 @@ blockquote > * + * {
             </article>
             <article>
               <header>
-                <div class="spaced-list">
-                  <h4>IT Assistant</h4>
-                  <span>
+                <h4>IT Assistant</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="http://www.dentalprev.ind.br">DentalPrev</a></strong>
+                  </div>
+                  <div>
                     <time datetime="2013-03-13">Mar 2013</time> –
                     <time datetime="2013-05-24">May 2013</time>
-                  </span>
+                  </div>
+                    <div>Lorena, Brazil</div>
                 </div>
-                <strong><a href="http://www.dentalprev.ind.br">DentalPrev</a></strong>
               </header>
             </article>
             <article>
               <header>
-                <div class="spaced-list">
-                  <h4>Technical Support Sector Supervisor</h4>
-                  <span>
+                <h4>Technical Support Sector Supervisor</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="http://www.mbd.com.br">MBD Informática</a></strong>
+                  </div>
+                  <div>
                     <time datetime="2011-06-01">Jun 2011</time> –
                     <time datetime="2013-03-09">Mar 2013</time>
-                  </span>
+                  </div>
+                    <div>Lorena, Brazil</div>
                 </div>
-                <strong><a href="http://www.mbd.com.br">MBD Informática</a></strong>
               </header>
             </article>
         </div>
@@ -405,27 +436,27 @@ blockquote > * + * {
         <div class="stack">
             <article>
               <header>
-                <div class="spaced-list">
-                  <h4>São Paulo State Technological College</h4>
-                  <span>
+                <h4>São Paulo State Technological College</h4>
+                <div class="meta">
+                    <strong>Information Management Technology</strong>
+                  <div>
                     <time datetime="2010-07-01">Jul 2010</time> –
                     <time datetime="2013-06-30">Jun 2013</time>
-                  </span>
+                  </div>
                 </div>
-                  <strong>Information Management Technology</strong>
               </header>
                 <p>Technologist</p>
             </article>
             <article>
               <header>
-                <div class="spaced-list">
-                  <h4>São Paulo State Technological College</h4>
-                  <span>
+                <h4>São Paulo State Technological College</h4>
+                <div class="meta">
+                    <strong>Strategic Management of Innovation and Entrepreneurship</strong>
+                  <div>
                     <time datetime="2013-10-19">Oct 2013</time> –
                     <time datetime="2015-10-01">Oct 2015</time>
-                  </span>
+                  </div>
                 </div>
-                  <strong>Strategic Management of Innovation and Entrepreneurship</strong>
               </header>
                 <p>Postgraduate</p>
             </article>
