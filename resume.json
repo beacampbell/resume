@@ -29,6 +29,17 @@
   },
   "work": [
     {
+      "name": "Cargill",
+      "location": "Bergen op Zoom, Netherlands",
+      "position": "Sales Support",
+      "url": "https://www.cargill.com/",
+      "startDate": "2021-11-08",
+      "highlights": [
+        "Support account and sales managers.",
+        "Creation of quotes, Long Term Suppliers Declaration requests, sample requests and quality requests."
+      ]
+    },
+    {
       "name": "Primark",
       "location": "Zaandam, Netherlands",
       "position": "Sales Employee Part-time",
@@ -48,7 +59,7 @@
       "position": "Sales Employee Part-time",
       "url": "https://www.primark.com/nl",
       "startDate": "2020-02-17",
-      "endDate": "2020-10-30"
+      "endDate": "2020-08-30"
     },
     {
       "name": "Primark",
