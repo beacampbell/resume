@@ -151,8 +151,7 @@
         "IBConsole",
         "Firebird",
         "Firebird Maestro",
-        "SQL",
-        "ODBC"
+        "SQL"
       ]
     },
     {
@@ -169,10 +168,16 @@
   ],
   "languages": [
     {
-      "language": "Portuguese"
+      "language": "Portuguese",
+      "fluency": "Native"
     },
     {
       "language": "English"
+      "fluency": "Professional working proficiency"
+    },
+    {
+      "language": "Dutch"
+      "fluency": "Elementary proficiency"
     }
   ]
 }
