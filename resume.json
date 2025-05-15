@@ -30,10 +30,22 @@
   "work": [
     {
       "name": "Cargill",
+      "location": "Schiphol, Netherlands",
+      "position": "Sales Coordinator",
+      "url": "https://www.cargill.com/",
+      "startDate": "2023-10-01",
+      "highlights": [
+        "Assist the Inside Sales team with key process execution and sales activation including, but not limited to, samples, quality assurance, pricing requests, customer agreements and ad hoc support.",
+        "Create reports and track requests."
+      ]
+    },
+    {
+      "name": "Cargill via JP Gray",
       "location": "Bergen op Zoom, Netherlands",
       "position": "Sales Support",
       "url": "https://www.cargill.com/",
       "startDate": "2021-11-08",
+      "endDate": "2023-09-30",
       "highlights": [
         "Support account and sales managers.",
         "Creation of quotes, Long Term Suppliers Declaration requests, sample requests and quality requests."
